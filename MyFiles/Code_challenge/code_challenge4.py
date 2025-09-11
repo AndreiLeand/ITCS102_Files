@@ -1,24 +1,23 @@
 print("Hello Welcome to the Manga Reader Recommender")
 print("Answer a few question:")
 
-genre = str(input("What genre that you type (action,horror,romance) --> "))
-
-
+genre = str(input("What genre that you type (action,romance,horror) --> ")).lower()
+length = "How long this should manga be?(short,medium,long) -->"
+decade = "What year?(2000,2024)-->"
 #ACTION
 if genre == "action":
-    length = str(input("How long this should manga be?(short,medium,long) -->"))
+    length = str(input(length)).lower()
     if length == "short":
-        decade = eval(input("What year?(2000,2024)-->"))
+        decade = eval(input(decade))
         if decade == 2000:
             print("WE RECOMMEND: Angel Sanctuary OVA 😇👼🔥😈 ")
         elif decade == 2024:
             print("WE RECOMMEND: Dandadan 👻👽⚡💥 ")
         else:
             print("The Year You Input is Not Available❌")
-        
-            
+                     
     elif length == "medium":
-        decade = eval(input("What year?(2000,2024)-->"))
+        decade = eval(input(decade))
         if decade == 2000:
                 print("WE RECOMMEND: Shaman King 🗡️👊🌀👻 ")
         elif decade == 2024:
@@ -28,7 +27,7 @@ if genre == "action":
         
     
     elif length == "long":
-        decade = eval(input("What year?(2000,2024)-->"))
+        decade = eval(input(decade))
         if decade == 2000:
            print("WE RECOMMEND: Naruto 🍥🔥🍃👊🌀")
         elif decade == 2024:
@@ -37,13 +36,13 @@ if genre == "action":
             print("The Year You Input is Not Available❌")
         
     else:
-        print("Sorry thats not available❌")
+        print("The Volume of Manga is Not Available❌")
         
 #ROMANCE
 elif genre == "romance":
-    length = str(input("How long this should manga be?(short,medium,long) -->"))
+    length = str(input(length)).lower()
     if length == "short":
-        decade = eval(input("What year?(2000,2024)-->"))
+        decade = eval(input(decade))
         if decade == 2000:
                 print("WE RECOMMEND: Kareshi Kanojo no Jijou (Kare Kano) OVA🎭📖🏫😊💫")
         elif decade == 2024:
@@ -52,7 +51,7 @@ elif genre == "romance":
             print("The Year You Input is Not Available❌")
     
     elif length == "medium":
-        decade = eval(input("What year?(2000,2024)-->"))
+        decade = eval(input(decade))
         if decade == 2000:
             print("WE RECOMMEND: Mamotte Shugogetten🌙🧚‍♀️💖")
         elif decade == 2024:
@@ -61,7 +60,7 @@ elif genre == "romance":
             print("The Year You Input is Not Available❌")
     
     elif length == "long":
-        decade = eval(input("What year?(2000,2024)-->"))
+        decade = eval(input(decade))
         if decade == 2000:
             print("WE RECOMMEND: Peach Girl🍑💔👩‍🦰")
         elif decade == 2024:
@@ -69,34 +68,30 @@ elif genre == "romance":
         else:
             print("The Year You Input is Not Available❌")
     else:
-        print("Sorry thats not available❌")
+        print("The Volume of Manga is Not Available❌")
 
 #HORROR
 elif genre == "horror":
-    length = str(input("How long this should manga be?(short,medium,long) -->"))
+    length = str(input(length)).lower()
     if length == "short":
-        decade = eval(input("What year?(2000,2024)-->"))
+        decade = eval(input(decade))
         if decade == 2000:
             print("WE RECOMMEND: Blood: The Last Vampire🩸🗡️👧🏻🦇🌑😱")
         elif decade == 2024:
             print("WE RECOMMEND: Toxic Daughter: Chi-chan🧪👧🩸")
         else:
-            print("The Year You Input is Not Available❌")
-    
-    
-    
-    if length == "medium":
-        decade = eval(input("What year?(2000,2024)-->"))
+            print("The Year You Input is Not Available❌") 
+    elif length == "medium":
+        decade = eval(input(decade))
         if decade == 2000:
             print("WE RECOMMEND: Hellsing🦇🔫🩸😈 ")
         elif decade == 2024:
             print("WE RECOMMEND: Parasyte: The Grey 🧑‍🤝‍🧑🦠")
         else:
-            print("The Year You Input is Not Available❌")
+            print("The Year You Input is Not Available❌")    
     
-    
-    if length == "long":
-        decade = eval(input("What year?(2000,2024)-->"))
+    elif length == "long":
+        decade = eval(input(decade))
         if decade == 2000:
             print("WE RECOMMEND: Fushigi Yûgi: Genbu Kaiden 🗡️🩸🌌")
         elif decade == 2024:
@@ -104,7 +99,7 @@ elif genre == "horror":
         else:
             print("The Year You Input is Not Available❌")
     else:
-        print("Sorry thats not available❌")
+        print("The Volume of Manga is Not Available❌")
 else:
     print("The Genre You Input is not available❌")
         
