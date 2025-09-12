@@ -1,3 +1,7 @@
+"""
+IF YOU INPUT A WRONG GENRE IT STOP THE PROGRAM BECAUSE YOU INPUT IS NOT VALID AND ALSO THE LENGTH AND DECADE
+"""
+
 print("Hello Welcome to the Manga Reader Recommender")
 print("Answer a few question:")
 
