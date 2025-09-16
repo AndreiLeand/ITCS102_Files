@@ -9,7 +9,14 @@ enter a number : 84
 enter a number : 7
 enter a number : 1
 
-The sum
-
+The summation of odd number = 22
 
 """
+
+sum = 0
+
+for odd in range(1,8,1):
+    number = eval(input("Input any number --> "))
+    if number % 2:
+     sum += number
+print("The summation of all odd numbers is =",sum)
