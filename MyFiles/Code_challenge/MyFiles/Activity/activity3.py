@@ -1,1 +1,0 @@
-print("Magandang Hapon \n\n\t\tBSIT 1B")
