@@ -69,4 +69,57 @@ while True:
         continue
 
     elif option == 'd':
-        
+        os.system('cls')
+
+        print("SEARCH STUDENT RECORD")
+
+        search_id = input("Input student ID for search ---> ")
+
+        for each in student_record.keys():
+            if search_id in student_record.keys():
+                print("******************")
+                print(f"RECORD FOUND for ID {search_id}")
+                #THIS IS FOR TO PRINT THE RECORD FOR THE SEARCH ID
+                for i in student_record[search_id]:
+                    print(f" **  {i}")
+                print("*******************")
+                student_record.pop(search_id)
+                print("RECORD DELETED")
+            else:
+                print("NO RECORD FOUND")
+            break
+        continue
+
+    elif option == 'e':
+        os.system('cls')
+
+        search_id = input("Input student ID for search ---> ").lower()
+
+        for each in student_record.keys():
+            if search_id in student_record.keys():
+                print("*********************")
+                print(f"RECORD FOUND FOR ID {search_id}")
+                for i in student_record[search_id]:
+                    print(f" ** {i}")
+                print("***********************")
+                break    
+
+        #THIS IS FOR THE NEW SET OF VALUE FOR THE SEARCHED ID
+
+        first_name = input('Please input student name ---> ').upper()
+        last_name = input('Please input student last name ---> ').upper()
+        age = eval(input('Please input student age ---> '))
+        course = input('Please input student course ---> ').upper()
+        section = input('Please input student section ---> ').upper()
+
+        student_record[search_id][0] = first_name
+        student_record[search_id][1] = last_name
+        student_record[search_id][2] = age
+        student_record[search_id][3] = course
+        student_record[search_id][4] = section
+
+        print("DATA UPDATED")
+        continue
+    
+    elif option == 'f':
+        os.system("cls")
